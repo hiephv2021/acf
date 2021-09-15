@@ -1,7 +1,8 @@
 {
-  "name": "corcel/acf",
+  "name": "hiephv2021/acf",
+  "replace": { "corcel/acf": "self.version" },
   "description": "Advanced Custom Field (ACF) plugin for Corcel",
-  "homepage": "http://github.com/corcel/acf",
+  "homepage": "https://github.com/hiephv2021/acf",
   "license": "MIT",
   "authors": [
     {
@@ -10,9 +11,23 @@
       "homepage": "http://jgrossi.com"
     }
   ],
+  "repositories": [
+    {
+        "type": "package",
+        "package": {
+            "name": "hiephv2021/corcel",
+            "version":"v4.0.3",
+            "source": {
+                "url": "https://github.com/hiephv2021/corcel",
+                "type": "git",
+                "reference":"v4.0.3"
+              }
+          }
+    }
+],
   "require": {
     "php": ">=7.2",
-    "jgrossi/corcel": "^4.0|^5.0"
+    "hiephv2021/corcel": "~4.0.3"
   },
   "require-dev": {
     "phpunit/phpunit": "^8.4|^9.0"
